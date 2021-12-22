@@ -1,0 +1,51 @@
+body {
+	color: #fff;
+}
+
+nav {
+	padding: 1rem;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+select {
+	padding: 0.25rem 0.5rem;
+	margin-right: 2rem;
+}
+
+table {
+	max-width: 2500px;
+	margin: auto;
+}
+
+td {
+	padding: 0.25rem 1rem;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+tr:nth-of-type(odd) {
+	background-color: #222;
+}
+
+td:nth-of-type(even) {
+	color: #fff;
+}
+
+tr:first-of-type {
+	background-color: #fff;
+	color: #000;
+	position: sticky;
+	top: 0;
+}
+
+tr:first-of-type td {
+	border-right: 1px solid #041e42;
+	color: #000;
+}
+
+tr td:first-of-type {
+	background-color: #fff;
+	color: #000;
+	border-bottom: 1px solid #041e42;
+}

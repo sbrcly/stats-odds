@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Demo</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="nav-logo">
+                <img src="/assets/mlb-logo.png" alt="MLB Logo" id="mlb-logo">
+            </div>
+            <div class="nav-links">
+                <select name="leagues" id="leaguesInput">
+                    <option value="mlb">MLB</option>
+                    <option value="mlb">NFL</option>
+                    <option value="mlb">NHL</option>
+                </select>
+                <select name="teams" id="teamsInput">
+                    <option value="Select Team">Select Team</option>
+                </select>
+                <select name="season" id="seasonsInput">
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="/bettingOdds/home.html" target="_blank">Current Odds</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="mainHeading">
+            <h1 id="teamHeading"></h1>
+            <div class="subHeadings">
+                <h2 class="active">Games</h2>
+            </div>
+        </div>
+        <div class="mainStats">
+            <table id="stats-table"></table>
+        </div>
+        <div class="headToHead">
+            <div class="team-names">
+                <h3 id="team1"></h3>
+                <h4 id="vs"> vs. </h4>
+                <h3 id="team2"></h3>
+            </div>
+            <button id="h2hStats">Get H2h Stats</button>
+            <table id="head-to-head-table"></table>
+        </div>
+    </main>
+    <script src="/app.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
